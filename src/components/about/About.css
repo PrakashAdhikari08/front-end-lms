@@ -1,0 +1,81 @@
+.about {
+  background-image: url(../../assets/img/bg11.PNG);
+  padding-top: 11vh;
+  background-size: cover;
+}
+.about_header {
+  justify-content: center;
+  text-align: center;
+}
+.about_header h1 {
+  padding-top: 3vh;
+  font-size: 7vh;
+  color: white;
+  letter-spacing: 5px;
+}
+.about_get {
+  display: flex;
+}
+.about_picture {
+  width: 60%;
+}
+.pic_side_text {
+  color: white;
+
+  width: 40%;
+}
+.about_changeText {
+  text-align: center;
+  padding-top: 3vh;
+}
+.about_changeText h1 {
+  font-size: 5vh;
+  color: #3b5998;
+}
+.about_goal {
+  padding-top: 3vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.about_team {
+  padding: 5vh;
+}
+.team_head {
+  padding-left: 10%;
+  padding-bottom: 2vh;
+}
+.teams {
+  text-align: center;
+}
+.teams img {
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+  margin-left: 2vh;
+  padding-bottom: 2vh;
+  /* border-radius: 5px 10px 15px 20px;  */
+}
+.allImage {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 786px) {
+  .allImage {
+    flex-direction: column;
+  }
+  .teams img {
+    height: 10vh;
+    width: 10vh;
+    padding-bottom: 2vh;
+  }
+  .team_head {
+    padding-left: 0%;
+    padding-bottom: 1vh;
+    text-align: center;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 1px;
+}
+.App {
+  font-family: "Poppins", sans-serif;
+}
+button,
+Link,
+a {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+button {
+  background-color: #00b2a9;
+}
+a:hover {
+  color: #fbee23;
+}
+button:hover {
+  background-color: #ffc659;
+  color: white;
+  outline: none;
+  border: 0;
+}

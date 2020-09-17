@@ -1,0 +1,40 @@
+.footermain {
+  /* background-color: #eeeeee; */
+}
+.div_footernav {
+  align-items: center;
+}
+ul {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  flex: 2;
+  margin-top: 4vh;
+}
+.footermain li {
+  text-decoration: none;
+  margin-left: 4vh;
+}
+.div_last {
+  text-align: center;
+  font-size: 12px;
+}
+p {
+  margin-top: 1vh;
+  color: #555;
+}
+hr {
+  border-top: 1px #555;
+}
+
+@media screen and (max-width: 786px) {
+  ul {
+    flex: 1;
+  }
+  li {
+    font-size: 12px;
+  }
+  .div_last {
+    font-size: 10px;
+  }
+}

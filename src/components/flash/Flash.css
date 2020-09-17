@@ -1,0 +1,22 @@
+.flash_main {
+  margin-top: 2vh;
+  margin-right: 35%;
+  margin-left: 35%;
+  width: 30%;
+  text-align: center;
+  animation: FadeAnimation 2s ease-in-out 3s forwards;
+  border-radius: 20px;
+  color: #eeeeee;
+  background-color: #c8102e;
+}
+
+@keyframes FadeAnimation {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

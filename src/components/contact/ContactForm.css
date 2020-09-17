@@ -1,0 +1,43 @@
+.form_main {
+  width: 90%;
+  height: 63vh;
+  margin: 5% 15% 15% 5%;
+
+  outline: none;
+}
+.form_main button {
+  font-size: large;
+  margin-top: 4vh;
+}
+.form_main h3 {
+  color: #111;
+  letter-spacing: 3px;
+}
+.form_main input {
+  margin-top: 2vh;
+  height: 6vh;
+  letter-spacing: 1px;
+}
+.form_main textarea {
+  margin-top: 2vh;
+  width: 90%;
+  height: 12vh;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  outline-color: slategrey;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+  border-image: initial;
+  border: none;
+  text-indent: 1vh;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 786px) {
+  .form_main {
+    width: 80%;
+    margin: 5% 10% 0% 10%;
+  }
+}

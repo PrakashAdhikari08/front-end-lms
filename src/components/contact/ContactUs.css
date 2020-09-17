@@ -1,0 +1,61 @@
+.headText {
+  padding-top: 14vh;
+  text-align: center;
+  font-size: x-large;
+  letter-spacing: 4px;
+}
+.contact_main {
+  display: flex;
+  /* height: 70vh; */
+}
+.logo1 {
+  width: 8vh;
+  height: 8vh;
+}
+.contact_icons {
+  width: 40%;
+  margin-top: 2vh;
+  margin-left: 20%;
+}
+.contact_icons li {
+  display: flex;
+  margin-top: 7vh;
+}
+
+.contact_icons p {
+  font-size: small;
+  letter-spacing: 1px;
+}
+.contact_form {
+  width: 50%;
+}
+.img_text {
+  padding-left: 1vh;
+}
+.img_text h4 {
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 786px) {
+  .contact_main {
+    flex-direction: column;
+  }
+  .contact_icons {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  .contact_icons li {
+    margin-left: 30%;
+    margin-right: 0%;
+    margin-top: 4vh;
+  }
+  .contact_form {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .headText h1 {
+    font-size: x-large;
+    font-style: normal;
+  }
+}

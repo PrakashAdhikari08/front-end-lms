@@ -1,0 +1,139 @@
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 11vh;
+  background: #00b2a9;
+  text-align: center;
+  position: fixed;
+}
+.logo-container {
+  flex: 2;
+}
+nav {
+  flex: 3;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.loginsignup_btn {
+  margin-top: 2.5vh;
+  justify-content: flex-end;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 2vh;
+}
+
+.logo-container,
+.nav-links {
+  display: flex;
+  margin-top: 3.5vh;
+}
+.logo {
+  margin: 0 0 0 40px;
+  text-decoration: none !important;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-link {
+  color: #eeeeee;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #f6eb61;
+}
+
+strong,
+h3 {
+  color: #eeeeee;
+}
+
+.signIn {
+  font-size: 16px;
+  text-decoration: none;
+  table-layout: auto;
+  margin-right: 8vh;
+  /* margin-top: 2.5vh; */
+}
+.fa-user {
+  font-size: 3.5vh;
+  color: white;
+}
+
+.user-sub-menu1 {
+  display: block;
+  position: relative;
+  background-color: #00b2a9;
+  width: fit-content;
+  border-radius: 5px;
+  margin-top: 3.5vh;
+  box-shadow: 0vh 0vh 4px 0vh #eeeeee;
+}
+.user-sub-menu {
+  display: none;
+}
+.fa-user:hover {
+  font-size: 4vh;
+  color: #555;
+}
+
+@media screen and (max-width: 786px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    /* align-items: center; */
+    /* margin-top: 2.5vh; */
+    top: 50%;
+    transform: translate(-5%, -50%);
+  }
+  .nav-links {
+    position: fixed;
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    /* align-items: center; */
+    display: none;
+    /* clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(600px at 90% -10%);
+    transition: all 1s ease-out; */
+  }
+  /* .loginsignup_btn {
+    width: 40%;
+    flex: 2;
+    margin-left: 48%;
+    position: fixed;
+    align-items: flex-end;
+  } */
+  .signIn {
+    font-size: 14px;
+    text-decoration: none;
+    table-layout: auto;
+    margin-right: 3vh;
+    /* margin-top: 2.5vh; */
+  }
+  .btn {
+    display: none;
+  }
+  .logo-container {
+    flex: 1;
+  }
+  .nav-links.open {
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+  }
+}

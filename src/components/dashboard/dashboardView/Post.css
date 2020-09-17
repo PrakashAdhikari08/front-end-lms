@@ -1,0 +1,42 @@
+.posts {
+  padding: 5vh;
+}
+.post {
+  padding: 3vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+.post h2 {
+  letter-spacing: 2px;
+}
+.post hr {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.postDetails strong {
+  font-size: 10px;
+  color: #777;
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
+.postDetails small {
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
+@media screen and (max-width: 786px) {
+  .posts {
+    padding: 2vh;
+  }
+  .post h2 {
+    font-size: medium;
+    font-style: normal;
+  }
+  .post p {
+    font-size: small;
+  }
+}

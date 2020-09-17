@@ -1,0 +1,138 @@
+.home_main {
+  padding-top: 11vh;
+  line-height: 2;
+}
+.photo_div {
+  background-image: url(../../assets/img/back1.jpg);
+  background-size: cover;
+  display: flex;
+  text-align: center;
+}
+.photo_left {
+  margin-top: 25vh;
+  width: 60%;
+  color: #fff;
+}
+
+.photo_right {
+  margin-top: 25vh;
+  font-size: 3vh;
+  width: 40%;
+  color: #fff;
+}
+.join_btn {
+  width: 35%;
+  height: 7vh;
+  margin-top: 2vh;
+  margin-bottom: 6vh;
+  border-radius: 10px;
+  background-color: #00b2a9;
+  background-position: center;
+  outline: none;
+  border: 0px;
+  letter-spacing: 2px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+.companyInfo {
+  background-color: #eeeeee;
+  text-align: center;
+  height: 30vh;
+}
+.companyLogos {
+}
+.companyInfo_text {
+  margin-top: 2vh;
+  margin: 2vh 5% 0vh 5%;
+}
+.programDiv {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.exploreText {
+  margin: 15vh 10% 5vh 10%;
+}
+.secondImage_main {
+  background-image: url(../../assets/img/java.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.detailsText {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1vh;
+}
+.review_btn {
+  width: 45%;
+  height: 6vh;
+  margin-top: 2vh;
+  margin-bottom: 6vh;
+  border-radius: 5px;
+  background-color: #00b2a9;
+  outline: none;
+  border: 0px;
+  letter-spacing: 1px;
+  font-size: large;
+}
+
+@media screen and (max-width: 786px) {
+  .photo_div {
+    flex-direction: column;
+  }
+
+  .photo_left {
+    margin-top: 5vh;
+    width: 100%;
+  }
+  .photo_left h2 {
+    font-size: medium;
+  }
+  .photo_left h3 {
+    font-size: small;
+  }
+  .photo_left h4 {
+    font-size: x-small;
+  }
+  .photo_right {
+    margin-top: 5vh;
+    width: 100%;
+    font-size: 2vh;
+  }
+  .join_btn {
+    width: 50%;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    background-color: #00b2a9;
+    outline-style: dotted 1px;
+  }
+  .review_btn {
+    width: 60%;
+    height: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    background-color: #00b2a9;
+    outline-style: dotted 1px;
+  }
+
+  .companyInfo_text {
+    margin-top: 1vh;
+    font-size: small;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .detailsText {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 1vh;
+    font-size: small;
+  }
+  .headingText h1 {
+    font-style: normal;
+  }
+}

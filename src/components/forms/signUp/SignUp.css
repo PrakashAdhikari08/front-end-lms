@@ -1,0 +1,28 @@
+.signMain {
+  margin-bottom: 7vh;
+}
+.formRegister section {
+  margin-top: 2vh;
+}
+
+.hr1 {
+  border-top: solid 5px rgba(255, 255, 255, 50%);
+  margin-left: 0px;
+}
+.loginlink {
+  margin-bottom: 2vh;
+}
+.sec1 {
+  margin-top: 0px;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  align-items: flex-start;
+  text-align: left;
+}
+.sec11 {
+  margin-left: 2.5vh;
+  margin-right: 2vh;
+  align-items: flex-start;
+  text-align: left;
+  font-size: small;
+}
