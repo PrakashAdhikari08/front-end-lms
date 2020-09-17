@@ -44,10 +44,6 @@ const LoginForm = (props) => {
   };
 
   const responseFacebook = (response) => {
-    // socialData.name = response.name,
-    // socialData.email = response.email,
-    // socialData.id = response.id,
-    // socialData.accessToken = response.accessToken,
     console.log(response.name);
   };
 
