@@ -1,5 +1,6 @@
 .login_main {
   justify-content: center;
+  padding-top: 11vh;
 }
 
 form {
@@ -38,6 +39,7 @@ form {
   margin-top: 1vh;
   border-radius: 4px;
   border: none;
+  font-size: medium;
 }
 .create_btn a {
   color: black;
@@ -68,9 +70,10 @@ form p {
   font-size: small;
 }
 form button {
+  font-size: large;
   margin-top: 2vh;
   margin-bottom: 2vh;
-  width: 18vh;
+  width: 20vh;
   height: 6vh;
   background-color: #00b2a9;
   border-radius: 7px;
@@ -78,6 +81,7 @@ form button {
   outline-color: #eeeeee;
   border: none;
 }
+
 .sec p {
   margin-right: 3vh;
   align-items: flex-start;

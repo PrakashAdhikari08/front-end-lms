@@ -35,6 +35,8 @@ const Routing = (props) => {
         {...props}
         render={() => (
           <>
+            <Header />
+
             <FlashMessages />
 
             <Component />

@@ -73,9 +73,9 @@ const Servies = () => {
               <p>Are you ready to get started?</p>
             </div>
             <div className="bottom_botton">
-              <button>
-                <h4>LET's GO</h4>
-              </button>
+              <Link to="/login">
+                <button>LET's GO</button>
+              </Link>
             </div>
           </div>
           <div className="last">

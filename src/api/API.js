@@ -21,7 +21,8 @@ export function changePassword(data) {
 
 //contact Us email to user
 export function contactUs(data) {
-  return Axios.post("/contactUs", data);
+  console.log(data);
+  return Axios.post("/user/v1/contact", data);
 }
 
 //uploading image of user
@@ -35,4 +36,9 @@ export const uploadPicture = (data) => {
     },
   };
   return Axios.post(`/upload/${data.userId}`, formData, config);
+};
+
+//facebook access token to server
+export const accessTokenRequest = (data) => {
+  return Axios.post("/facebook/login", data);
 };

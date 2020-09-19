@@ -13,8 +13,8 @@ const Home = (props) => {
             <h4>Don't Worry We got all You need.</h4>
             <br></br>
             <h3>You might me the next DEVELOPER.</h3>
-            <Link to="/get-an-intern">
-              <button className="join_btn">GET AN INTERN</button>
+            <Link to="/login">
+              <button className="join_btn">GET A COURSE</button>
             </Link>
           </div>
           <div className="photo_right">

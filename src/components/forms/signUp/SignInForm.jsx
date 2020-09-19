@@ -118,9 +118,7 @@ const SignInForm = (props) => {
             ) : null}
           </section>
           <section>
-            <button type="submit">
-              <h4>Register</h4>
-            </button>
+            <button type="submit">REGISTER</button>
           </section>
           <section className="sec1">
             <p>

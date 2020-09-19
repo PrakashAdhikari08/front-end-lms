@@ -19,7 +19,7 @@ const FormFooter = () => {
         </ul>
       </div>
       <div className="div_last">
-        <p>@ 1996-2020 InternshipNepal.com, Inc or it affilates</p>
+        <p>@ 1996-2020 www.hacercode.com, Inc or it affilates</p>
       </div>
     </div>
   );

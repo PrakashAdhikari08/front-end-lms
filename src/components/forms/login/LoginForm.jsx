@@ -4,7 +4,7 @@ import { Link, withRouter } from "react-router-dom";
 import PageHeader from "../../PageHeader";
 import * as Yup from "yup";
 import { useFormik } from "formik";
-import { loginUser } from "../../../api/API";
+import { accessTokenRequest, loginUser } from "../../../api/API";
 import DispatchContext from "../../../context/DispatchContext";
 import FacebookLogin from "react-facebook-login";
 import GoogleLogin from "react-google-login";
@@ -43,12 +43,25 @@ const LoginForm = (props) => {
     id: "",
   };
 
-  const responseFacebook = (response) => {
-    console.log(response.name);
+  const responseFacebook = async (response) => {
+    socialData.name = response.name;
+    socialData.email = response.email;
+    socialData.id = response.id;
+    socialData.accessToken = response.accessToken;
+
+    await accessTokenRequest(socialData).then(
+      (response) => {
+        appDispatch({ type: "login", data: response.data });
+        props.history.push("/dashboard/" + response.id);
+      },
+      (error) => {
+        console.log(error.data);
+      }
+    );
   };
 
   const responseGoogle = (response) => {
-    console.log(response);
+    //console.log(response);
   };
 
   const initialValues = {
@@ -109,15 +122,12 @@ const LoginForm = (props) => {
           <section className="sec1">
             <Link to="/forgot-password">Forgot Your Password?</Link>
           </section>
-          <section>
-            <button type="submit">
-              <h4>Login</h4>
-            </button>
+          <section className="login_btn">
+            <button type="submit">LOGIN</button>
           </section>
           <div className="social_buttons">
             <FacebookLogin
               appId="746359062877707"
-              autoLoad={true}
               fields="name,email,picture"
               // onClick={componentClicked}
               callback={responseFacebook}
@@ -150,9 +160,7 @@ const LoginForm = (props) => {
             <p>New to the website?</p>
 
             <button className="create_btn" disabled>
-              <Link to="/register">
-                <h4>Create your website Account</h4>
-              </Link>
+              <Link to="/register">Create your Account</Link>
             </button>
           </div>
         </div>

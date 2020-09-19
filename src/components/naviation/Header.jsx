@@ -15,36 +15,47 @@ const Header = () => {
   }
   return (
     <header>
-      <div className="logo-container ">
-        <Link to="/">
-          <h3 className="logo">HacerCode</h3>
-        </Link>
-      </div>
-
       <nav>
-        <div className="hamburger" onClick={() => setMenu(true)}>
+        <div className="logo-container ">
+          <Link to="/" onClick={() => setMenu(false)}>
+            <h3 className="logo">HacerCode</h3>
+          </Link>
+        </div>
+        <div className="hamburger" onClick={() => setMenu(!menu)}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
-        <ul className="nav-links">
+        <ul className={`nav-links ${menu && "open"}`}>
           <li>
-            <Link to="/" className="nav-link">
+            <Link to="/" onClick={() => setMenu(!menu)} className="nav-link">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/services" className="nav-link">
+            <Link
+              to="/services"
+              onClick={() => setMenu(!menu)}
+              className="nav-link"
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="nav-link">
+            <Link
+              to="/contact"
+              onClick={() => setMenu(!menu)}
+              className="nav-link"
+            >
               Contact
             </Link>
           </li>
           <li data-tip="About HacerCode" data-for="edit1">
-            <Link to="/about" className="nav-link">
+            <Link
+              to="/about"
+              onClick={() => setMenu(!menu)}
+              className="nav-link"
+            >
               About
             </Link>
           </li>
@@ -76,7 +87,11 @@ const Header = () => {
             </li>
           ) : (
             <li>
-              <Link to="/login" className="nav-link">
+              <Link
+                to="/login"
+                onClick={() => setMenu(!menu)}
+                className="nav-link"
+              >
                 login
               </Link>
             </li>
